@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- linking fav-icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+
+    <!-- title -->
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- linking tailwind style sheet -->
+    <link rel="stylesheet" href="/src/output.css" />
+  </head>
+
+  <body class="flex flex-col h-screen items-center justify-center bg-cream">
+    <!-- container -->
+    <div
+      class="max-w-xs mx-auto bg-white rounded-xl shadow-xl overflow-hidden md:max-w-4xl"
+    >
+      <div class="md:flex max-w-lg">
+        <!-- image container -->
+        <div class="md:shrink-0">
+          <img
+            class="h-48 w-full object-cover lg:h-full md:w-60"
+            src="/images/image-product-desktop.jpg"
+            alt="image-product-desktop"
+          />
+        </div>
+        <!-- text-container -->
+        <div class="p-6">
+          <p class="text-darkGrayishBlue mb-2 text-xs">P E R F U M E</p>
+          <h1 class="text-4xl font-serif font-bold">
+            Gabrielle Essence Eau De Parfum
+          </h1>
+          <p class="text-darkGrayishBlue my-2 font-sans">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="flex items-center gap-6">
+            <h1 class="text-4xl font-serif text-green_800">$149.99</h1>
+            <p class="line-through">$169.99</p>
+          </div>
+          <button
+            class="bg-green_800 hover:bg-green-900 flex items-center justify-center gap-4 py-6 mt-4 mx-auto rounded-xl w-full h-4 text-white"
+          >
+            <img src="/images/icon-cart.svg" alt="icon-cart-svg-img" />Add to
+            Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- attribution -->
+    <div class="no-underline text-sm mt-8">
+      Challenge by
+      <a
+        class="text-green_800"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >
+      Coded by <a class="text-green_800" href="#">Wisdom Matthew</a>
+    </div>
+  </body>
+</html>
